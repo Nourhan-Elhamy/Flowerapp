@@ -27,7 +27,9 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
             padding: EdgeInsets.only(left: 20,right: 20),
             child: GestureDetector(
               onTap: (){
-                Navigator.pushNamed(context, '/');
+                  Navigator.push(context, MaterialPageRoute(builder: (c){
+                    return HomeScreen();
+                  }));
               },
               child: Container(
                 height: 50,
